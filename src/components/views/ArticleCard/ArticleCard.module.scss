@@ -1,0 +1,39 @@
+.container {
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+  text-decoration: none;
+
+  &__text,
+  &__header {
+    display: flex;
+    overflow: hidden;
+    height: 20px;
+    text-overflow: ellipsis;
+  }
+
+  &__header {
+    height: 40px;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+
+    &__button {
+      flex: 1;
+      border-radius: 0;
+      box-shadow: none !important;
+
+      &:first-child {
+        border-bottom-left-radius: $border-radius;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+  }
+}

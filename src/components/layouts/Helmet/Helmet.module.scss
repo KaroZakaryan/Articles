@@ -1,0 +1,13 @@
+.container {
+  max-width: unset;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3939b7 31.16%, #0d0d0d 106.03%);
+
+  @include breakpoint(tablet-m) {
+    padding: 0;
+  }
+
+  &__children {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  min-height: 503px;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 40px;
+    color: $white;
+    text-align: center;
+  }
+
+  &__quote {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

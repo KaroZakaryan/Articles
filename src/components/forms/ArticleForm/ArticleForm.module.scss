@@ -1,0 +1,16 @@
+.container {
+  padding: 20px 0 0;
+
+  :global(.form-check-label) {
+    color: $white !important;
+  }
+
+  &__submit {
+    width: 100%;
+
+    &:disabled {
+      cursor: not-allowed;
+      pointer-events: auto;
+    }
+  }
+}

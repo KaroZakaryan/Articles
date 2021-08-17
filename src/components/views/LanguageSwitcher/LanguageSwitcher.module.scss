@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+
+  &__btn {
+    @include breakpoint(mobile) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  &__menu {
+    z-index: $zindex-fixed;
+    background-color: $black;
+  }
+}

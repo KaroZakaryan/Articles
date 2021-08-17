@@ -1,0 +1,10 @@
+.container {
+  &__content {
+    padding: 0;
+
+    :global(.form-control) {
+      overflow: auto;
+      height: 200px !important;
+    }
+  }
+}

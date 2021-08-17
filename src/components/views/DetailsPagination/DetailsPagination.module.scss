@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  &__pagination {
+    width: 100%;
+    max-width: 200px;
+    justify-content: space-between;
+    margin: 0;
+    color: $white;
+    user-select: none;
+
+    &__noprev {
+      justify-content: flex-end;
+    }
+
+    &__nonext {
+      justify-content: flex-start;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      color: $white !important;
+      text-decoration: none;
+    }
+  }
+}

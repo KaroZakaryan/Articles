@@ -1,0 +1,13 @@
+.tab {
+  background-color: $black !important;
+  border-radius: 0 !important;
+
+  &:last-child {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+  }
+
+  &__content {
+    padding-top: 20px;
+  }
+}

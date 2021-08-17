@@ -1,0 +1,22 @@
+.container {
+  &__add {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+
+    @include breakpoint(mobile) {
+      font-size: $font-size-sm;
+    }
+
+    &__icon {
+      margin-left: 10px;
+
+      @include breakpoint(mobile) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

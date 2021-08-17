@@ -1,0 +1,66 @@
+.container {
+  min-height: 600px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  @include breakpoint(tablet-m) {
+    box-shadow: none;
+  }
+
+  &__navbar {
+    margin: 0 -12px;
+    margin-bottom: 20px;
+    background: linear-gradient(130deg, #3939b7 31.16%, #0d0d0d 106.03%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 5px 5px #2d2b2bbf;
+
+    @include breakpoint(tablet-m) {
+      border-radius: 0;
+    }
+
+    &__inner {
+      @include breakpoint(tablet-m) {
+        padding: 0;
+      }
+    }
+
+    &__back {
+      display: flex;
+      box-shadow: none !important;
+      outline: 0;
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+      text-shadow: 2px 2px 4px $black;
+
+      &_noback {
+        @include breakpoint(tablet-m) {
+          padding-left: 10px;
+        }
+      }
+    }
+
+    &__brand {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      color: $white !important;
+
+      @include breakpoint(mobile) {
+        font-size: $font-size-sm;
+      }
+
+      i {
+        margin: 0 10px;
+        font-family: $washington-text-font;
+      }
+    }
+  }
+}
